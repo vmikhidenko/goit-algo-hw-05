@@ -90,7 +90,7 @@ def measure_time(text, substring, algorithm):
     return timer
 
 # Результати для статті 1
-print("Стаття 1 (існуючий підрядок):")
+print("Стаття 1 (існуючий підрядок): ")
 print("Бойєр-Мур:", measure_time(text1, existing_substring, boyer_moore_search))
 print("КМП:", measure_time(text1, existing_substring, kmp_search))
 print("Рабін-Карп:", measure_time(text1, existing_substring, rabin_karp_search))
@@ -101,12 +101,12 @@ print("КМП:", measure_time(text1, non_existing_substring, kmp_search))
 print("Рабін-Карп:", measure_time(text1, non_existing_substring, rabin_karp_search))
 
 # Результати для статті 2
-print("Стаття 2 (існуючий підрядок):")
+print("Стаття 2 (існуючий підрядок): ")
 print("Бойєр-Мур:", measure_time(text2, existing_substring, boyer_moore_search))
 print("КМП:", measure_time(text2, existing_substring, kmp_search))
 print("Рабін-Карп:", measure_time(text2, existing_substring, rabin_karp_search))
 
-print("Стаття 2 (вигаданий підрядок):")
+print("Стаття 2 (вигаданий підрядок): ")
 print("Бойєр-Мур:", measure_time(text2, non_existing_substring, boyer_moore_search))
 print("КМП:", measure_time(text2, non_existing_substring, kmp_search))
 print("Рабін-Карп:", measure_time(text2, non_existing_substring, rabin_karp_search))
